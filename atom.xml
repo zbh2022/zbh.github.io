@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-11T03:13:44.015Z</updated>
+  <updated>2022-03-12T08:45:23.355Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,22 +17,27 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2022/03/11/2022_3/hello-world/"/>
-    <id>http://example.com/2022/03/11/2022_3/hello-world/</id>
-    <published>2022-03-11T03:02:42.227Z</published>
-    <updated>2022-03-11T03:13:44.015Z</updated>
+    <title>Hello World--梦开始的地方</title>
+    <link href="http://example.com/2022/03/12/2022_3/1-hello/"/>
+    <id>http://example.com/2022/03/12/2022_3/1-hello/</id>
+    <published>2022-03-12T08:09:38.000Z</published>
+    <updated>2022-03-12T08:45:23.355Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><h3 id="test-mermaid"><a href="#test-mermaid" class="headerlink" title="test mermaid"></a>test mermaid</h3><pre class="mermaid">graph TD;A-->B;A-->C;B-->D;C-->D;</pre>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://zbh2022.github.io/">Zhang Bohang’ Blog</a>! This is my very first post.</p><h2 id="开始"><a href="#开始" class="headerlink" title="开始 "></a>开始 <br/></h2><p>由于个人研究生学习工作的需要，想通过搭建自己的博客来更好的记录自己的学习，并记录自己的精彩生活，本人从事领域为生物信息学、生殖医学，希望大家多多相互交流学习！</p><h2 id="分类"><a href="#分类" class="headerlink" title="分类 "></a>分类 <br/></h2><p>最初的想法分类为：</p><ul><li>工作</li><li>学习</li><li>生活<h2 id="最后"><a href="#最后" class="headerlink" title="最后 "></a>最后 <br/></h2>以一张上周末在总统府拍的梅花作为第一篇博文的结束吧，谢谢大家的关注！<br><img src="/./pictures/1.jpg" alt="总统府的梅花"></li></ul><hr><h2 id="日子常新，未来不远，一起探索美好生活吧！"><a href="#日子常新，未来不远，一起探索美好生活吧！" class="headerlink" title="日子常新，未来不远，一起探索美好生活吧！"></a><strong>日子常新，未来不远，一起探索美好生活吧！</strong></h2>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;http://zbh2022.github.io/&quot;&gt;Zhang Bohang’ Blog&lt;/a&gt;! This is my very first post.&lt;/p&gt;
+&lt;h2 id=&quot;开始&quot;&gt;&lt;a href=&quot;#开始&quot; class=&quot;h</summary>
       
     
     
     
+    <category term="学习" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
