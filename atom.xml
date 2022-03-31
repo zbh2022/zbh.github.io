@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-12T09:16:27.316Z</updated>
+  <updated>2022-03-31T13:01:37.673Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>R语言简介 | Datacamp</title>
+    <link href="http://example.com/2022/03/31/2-R-datacamp/"/>
+    <id>http://example.com/2022/03/31/2-R-datacamp/</id>
+    <published>2022-03-31T02:49:20.000Z</published>
+    <updated>2022-03-31T13:01:37.673Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Basic-data-types-in-R"><a href="#Basic-data-types-in-R" class="headerlink" title="Basic data types in R"></a>Basic data types in R</h2><p>R适用于众多数据类型。最初的一些最基本的类型是：</p><ul><li><p>像4.5等十进制值称为数字。</p></li><li><p>整个数字如4称为整数。整数也是数字。</p></li><li><p>布尔值（true或false）称为逻辑。</p></li><li><p>文本（或字符串）值称为字符。</p></li></ul><h2 id="Create-a-vector"><a href="#Create-a-vector" class="headerlink" title="Create a vector"></a>Create a vector</h2><p>向量是可以保持数字数据，字符数据或逻辑数据的一维阵列。换句话说，向量是存储数据的简单工具。在r中，您可以使用Combine函数C（）创建矢量。</p><pre><code class="R">numeric_vector &lt;- c(1, 10, 49)character_vector &lt;- c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)# Complete the code for boolean_vectorboolean_vector &lt;- c(TRUE, FALSE ,TRUE)</code></pre><h2 id="What’s-a-matrix"><a href="#What’s-a-matrix" class="headerlink" title="What’s a matrix?"></a>What’s a matrix?</h2><p>在R中，矩阵是排列成固定数量的行和列的相同数据类型（数字，字符或逻辑）的元素的集合。由于您只使用行和列，因此矩阵被称为二维。<br>您可以使用Matrix( )函数构造R中的矩阵。考虑以下示例：</p><pre><code class="R">matrix(1:9, byrow = TRUE, nrow = 3)</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Basic-data-types-in-R&quot;&gt;&lt;a href=&quot;#Basic-data-types-in-R&quot; class=&quot;headerlink&quot; title=&quot;Basic data types in R&quot;&gt;&lt;/a&gt;Basic data types in R&lt;/</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="R语言" scheme="http://example.com/tags/R%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="Datacamp" scheme="http://example.com/tags/Datacamp/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World--梦开始的地方</title>
