@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-31T13:01:37.673Z</updated>
+  <updated>2022-04-06T02:20:25.912Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2022/03/31/2-R-datacamp/"/>
     <id>http://example.com/2022/03/31/2-R-datacamp/</id>
     <published>2022-03-31T02:49:20.000Z</published>
-    <updated>2022-03-31T13:01:37.673Z</updated>
+    <updated>2022-04-06T02:20:25.912Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Basic-data-types-in-R"><a href="#Basic-data-types-in-R" class="headerlink" title="Basic data types in R"></a>Basic data types in R</h2><p>R适用于众多数据类型。最初的一些最基本的类型是：</p><ul><li><p>像4.5等十进制值称为数字。</p></li><li><p>整个数字如4称为整数。整数也是数字。</p></li><li><p>布尔值（true或false）称为逻辑。</p></li><li><p>文本（或字符串）值称为字符。</p></li></ul><h2 id="Create-a-vector"><a href="#Create-a-vector" class="headerlink" title="Create a vector"></a>Create a vector</h2><p>向量是可以保持数字数据，字符数据或逻辑数据的一维阵列。换句话说，向量是存储数据的简单工具。在r中，您可以使用Combine函数C（）创建矢量。</p><pre><code class="R">numeric_vector &lt;- c(1, 10, 49)character_vector &lt;- c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)# Complete the code for boolean_vectorboolean_vector &lt;- c(TRUE, FALSE ,TRUE)</code></pre><h2 id="What’s-a-matrix"><a href="#What’s-a-matrix" class="headerlink" title="What’s a matrix?"></a>What’s a matrix?</h2><p>在R中，矩阵是排列成固定数量的行和列的相同数据类型（数字，字符或逻辑）的元素的集合。由于您只使用行和列，因此矩阵被称为二维。<br>您可以使用Matrix( )函数构造R中的矩阵。考虑以下示例：</p><pre><code class="R">matrix(1:9, byrow = TRUE, nrow = 3)</code></pre>]]></content>
+    <content type="html"><![CDATA[<h2 id="Basic-data-types-in-R"><a href="#Basic-data-types-in-R" class="headerlink" title="Basic data types in R"></a>Basic data types in R</h2><p>R适用于众多数据类型。最初的一些最基本的类型是：</p><ul><li><p>像4.5等十进制值称为数字。</p></li><li><p>整个数字如4称为整数。整数也是数字。</p></li><li><p>布尔值（true或false）称为逻辑。</p></li><li><p>文本（或字符串）值称为字符。</p></li></ul><h2 id="Create-a-vector"><a href="#Create-a-vector" class="headerlink" title="Create a vector"></a>Create a vector</h2><p>向量是可以保持数字数据，字符数据或逻辑数据的一维阵列。换句话说，向量是存储数据的简单工具。在r中，您可以使用Combine函数C（）创建矢量。</p><pre><code class="R">numeric_vector &lt;- c(1, 10, 49)character_vector &lt;- c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)# Complete the code for boolean_vectorboolean_vector &lt;- c(TRUE, FALSE ,TRUE)</code></pre><h2 id="What’s-a-matrix"><a href="#What’s-a-matrix" class="headerlink" title="What’s a matrix?"></a>What’s a matrix?</h2><p>在R中，矩阵是排列成固定数量的行和列的相同数据类型（数字，字符或逻辑）的元素的集合。由于您只使用行和列，因此矩阵被称为二维。<br>您可以使用Matrix( )函数构造R中的矩阵。考虑以下示例：</p><pre><code class="R">matrix(1:9, byrow = TRUE, nrow = 3)</code></pre><h2 id="What’s-a-factor-and-why-would-you-use-it"><a href="#What’s-a-factor-and-why-would-you-use-it" class="headerlink" title="What’s a factor and why would you use it?"></a>What’s a factor and why would you use it?</h2><p>因子是指用于存储分类变量的统计数据类型。分类变量和连续变量之间的差异是分类变量可以属于有限数量的类别，而连续变量可以对应于无限数量的值。</p><p>r知道它是否正在处理连续或一个分类的变量很重要，因为您将在未来的统计模型中发展的统计模型不同。</p><h3 id="分类变量"><a href="#分类变量" class="headerlink" title="分类变量"></a>分类变量</h3><p>有两种类型的分类变量：名义分类变量和序号分类变量。</p><p>没有隐含顺序的名义变量是一个分类变量。这意味着不可能说“一个人比对方更有价值”。</p><p>相比之下，序数变量确实有自然排序。如：“低”，“中”和“高”。</p><h3 id="Factor-levels"><a href="#Factor-levels" class="headerlink" title="Factor levels"></a>Factor levels</h3><p>分配水平的顺序是很重要的，如果在创建向量时没有指定因子的级别，r 将自动按字母顺序分配它们。</p><pre><code class="r">levels(factor_vector) &lt;- c(&quot;name1&quot;, &quot;name2&quot;,...)</code></pre>]]></content>
     
     
       
