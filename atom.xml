@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-07T13:14:24.192Z</updated>
+  <updated>2022-04-07T14:01:46.325Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>中级 R语言 | Datacamp</title>
+    <link href="http://example.com/2022/04/07/3-R-datacamp/"/>
+    <id>http://example.com/2022/04/07/3-R-datacamp/</id>
+    <published>2022-04-07T13:43:06.000Z</published>
+    <updated>2022-04-07T14:01:46.325Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="关系运算符-Relational-Operators"><a href="#关系运算符-Relational-Operators" class="headerlink" title="关系运算符 Relational Operators"></a>关系运算符 Relational Operators</h2><p>&#x3D;&#x3D;  !&#x3D;  &gt;  &lt;  &lt;&#x3D;  &gt;&#x3D;<br>确保不要混合&#x3D;&#x3D;（比较）和&#x3D;（赋值），&#x3D;&#x3D;是检查R对象的平等。</p><p>Logical Operators<br><img src="https://files.catbox.moe/tsukqc.png" alt="1"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;关系运算符-Relational-Operators&quot;&gt;&lt;a href=&quot;#关系运算符-Relational-Operators&quot; class=&quot;headerlink&quot; title=&quot;关系运算符 Relational Operators&quot;&gt;&lt;/a&gt;关系运算符 Re</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="R语言" scheme="http://example.com/tags/R%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="Datacamp" scheme="http://example.com/tags/Datacamp/"/>
+    
+  </entry>
   
   <entry>
     <title>R语言简介 | Datacamp</title>
