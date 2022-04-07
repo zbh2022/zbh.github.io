@@ -22,12 +22,12 @@
     <meta name="description" content="Basic data types in RR适用于众多数据类型。最初的一些最基本的类型是：  像4.5等十进制值称为数字。  整个数字如4称为整数。整数也是数字。  布尔值（true或false）称为逻辑。  文本（或字符串）值称为字符。   Create a vector向量是可以保持数字数据，字符数据或逻辑数据的一维阵列。换句话说，向量是存储数据的简单工具。在r中，您可以使用Combine函数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="R语言简介 | Datacamp">
-<meta property="og:url" content="http://example.com/2022/03/31/2-R-datacamp/index.html">
+<meta property="og:url" content="http://example.com/2022/04/07/2-R-datacamp/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Basic data types in RR适用于众多数据类型。最初的一些最基本的类型是：  像4.5等十进制值称为数字。  整个数字如4称为整数。整数也是数字。  布尔值（true或false）称为逻辑。  文本（或字符串）值称为字符。   Create a vector向量是可以保持数字数据，字符数据或逻辑数据的一维阵列。换句话说，向量是存储数据的简单工具。在r中，您可以使用Combine函数">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-03-31T02:49:20.000Z">
-<meta property="article:modified_time" content="2022-04-06T02:20:25.912Z">
+<meta property="article:published_time" content="2022-04-07T02:49:20.000Z">
+<meta property="article:modified_time" content="2022-04-07T12:21:55.363Z">
 <meta property="article:author" content="Zhang Bohang">
 <meta property="article:tag" content="R语言">
 <meta property="article:tag" content="Datacamp">
@@ -337,13 +337,13 @@
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">506</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">1.2k</span>Reading time: <span class="post-count reading-time">4 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <!-- 撰写日期 -->
                     <span class="iconfont-archer post-intro-calander">&#xe676;</span>
-                    <span class="post-intro-time">2022/03/31</span>
+                    <span class="post-intro-time">2022/04/07</span>
                     <!-- busuanzi -->
                     
                         <span id="busuanzi_container_page_pv" class="busuanzi-pv">
@@ -527,15 +527,48 @@ boolean_vector &lt;- c(TRUE, FALSE ,TRUE)
 <h3 id="Factor-levels"><a href="#Factor-levels" class="headerlink" title="Factor levels"></a>Factor levels</h3><p>分配水平的顺序是很重要的，如果在创建向量时没有指定因子的级别，r 将自动按字母顺序分配它们。</p>
 <pre><code class="r">levels(factor_vector) &lt;- c(&quot;name1&quot;, &quot;name2&quot;,...)
 </code></pre>
+<h3 id="Summarizing-a-factor"><a href="#Summarizing-a-factor" class="headerlink" title="Summarizing a factor"></a>Summarizing a factor</h3><p>最喜欢的 r 函数之一将是 summary (), 这将给你一个变量内容的快速概述:</p>
+<pre><code class="r">summary(my_var)
+</code></pre>
+<p>speed_vector应该转换为序数因子，因为它的类别有一个自然的顺序。默认情况下，factor()将 speed_vector 转换为无序因子。要创建有序因子，必须添加两个额外的参数: ordered 和 levels。</p>
+<pre><code class="r">factor(some_vector,
+       ordered = TRUE,
+       levels = c(&quot;lev1&quot;, &quot;lev2&quot; ...))
+</code></pre>
+<h2 id="What’s-a-data-frame"><a href="#What’s-a-data-frame" class="headerlink" title="What’s a data frame?"></a>What’s a data frame?</h2><p>你可能记得在关于矩阵的章节中，你放在矩阵中的所有元素都应该是相同类型的。</p>
+<p>您经常会发现自己使用的数据集包含不同的数据类型，而不是只有一种。</p>
+<p>数据框：将数据集的变量作为列，将观察值作为行。这将是一个熟悉的概念，为那些来自不同的统计软件包，如 SAS 或 SPSS。</p>
+<h3 id="Have-a-look-at-the-structure"><a href="#Have-a-look-at-the-structure" class="headerlink" title="Have a look at the structure"></a>Have a look at the structure</h3><p>应用str()函数通常是接收新数据集或数据帧时要做的第一件事。这是在进行实际分析之前在数据集中获得更多洞察力的好方法。</p>
+<h3 id="Subset"><a href="#Subset" class="headerlink" title="Subset"></a>Subset</h3><pre><code class="r">subset(my_df, subset = some_condition)
+</code></pre>
+<p>Subset ()的第一个参数指定需要子集的数据集。通过添加第二个参数，可以向 r 提供选择正确子集所需的信息和条件。</p>
+<h3 id="Sorting"><a href="#Sorting" class="headerlink" title="Sorting"></a>Sorting</h3><p>在数据分析中，您可以根据数据集中的某个变量对数据进行排序。在 r 中，这是通过函数 order( ) 来完成的。</p>
+<pre><code class="r"># Use order() to create positions
+positions &lt;-  order(planets_df$diameter)
+
+# Use positions to sort planets_df
+planets_df[positions,]
+</code></pre>
+<h2 id="Lists-why-would-you-need-them"><a href="#Lists-why-would-you-need-them" class="headerlink" title="Lists, why would you need them?"></a>Lists, why would you need them?</h2><ul>
+<li><p>向量(一维数组) : 可以保存数字、字符或逻辑值。向量中的元素都具有相同的数据类型。</p>
+</li>
+<li><p>矩阵(二维数组) : 可以保存数字，字符或逻辑值。矩阵中的元素都具有相同的数据类型。</p>
+</li>
+<li><p>数据帧(二维对象) : 可以保存数字、字符或逻辑值。在一个列中，所有元素都具有相同的数据类型，但是不同的列可以具有不同的数据类型。</p>
+</li>
+</ul>
+<p>R中的列表类似于工作或学校中的待办事项列表: 列表中的不同项目很可能在长度、特征和必须完成的活动类型上有所不同。</p>
+<p>R 中的列表允许您以一种有序的方式在一个名称(即列表的名称)下收集各种对象。这些对象可以是矩阵、向量、数据框，甚至是其他列表等。甚至不要求这些对象彼此相关。</p>
+<p>可以说列表是某种超级数据类型: 可以在其中存储几乎任何信息！</p>
 
     </article>
     <!-- license -->
     
         <div class="license-wrapper">
             <p>Author：<a href="http://example.com">Zhang Bohang</a>
-            <p>Link：<a href="http://example.com/2022/03/31/2-R-datacamp/">http://example.com/2022/03/31/2-R-datacamp/</a>
-            <p>Publish date：<a href="http://example.com/2022/03/31/2-R-datacamp/">March 31st 2022, 10:49:20 am</a>
-            <p>Update date：<a href="http://example.com/2022/03/31/2-R-datacamp/">April 6th 2022, 10:20:25 am</a>
+            <p>Link：<a href="http://example.com/2022/04/07/2-R-datacamp/">http://example.com/2022/04/07/2-R-datacamp/</a>
+            <p>Publish date：<a href="http://example.com/2022/04/07/2-R-datacamp/">April 7th 2022, 10:49:20 am</a>
+            <p>Update date：<a href="http://example.com/2022/04/07/2-R-datacamp/">April 7th 2022, 8:21:55 pm</a>
             <p>License：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -692,7 +725,7 @@ boolean_vector &lt;- c(TRUE, FALSE ,TRUE)
                 <div class="toc-catalog">
                     <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
                 </div>
-                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Basic-data-types-in-R"><span class="toc-number">1.</span> <span class="toc-text">Basic data types in R</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Create-a-vector"><span class="toc-number">2.</span> <span class="toc-text">Create a vector</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What%E2%80%99s-a-matrix"><span class="toc-number">3.</span> <span class="toc-text">What’s a matrix?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What%E2%80%99s-a-factor-and-why-would-you-use-it"><span class="toc-number">4.</span> <span class="toc-text">What’s a factor and why would you use it?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%B1%BB%E5%8F%98%E9%87%8F"><span class="toc-number">4.1.</span> <span class="toc-text">分类变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Factor-levels"><span class="toc-number">4.2.</span> <span class="toc-text">Factor levels</span></a></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Basic-data-types-in-R"><span class="toc-number">1.</span> <span class="toc-text">Basic data types in R</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Create-a-vector"><span class="toc-number">2.</span> <span class="toc-text">Create a vector</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What%E2%80%99s-a-matrix"><span class="toc-number">3.</span> <span class="toc-text">What’s a matrix?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What%E2%80%99s-a-factor-and-why-would-you-use-it"><span class="toc-number">4.</span> <span class="toc-text">What’s a factor and why would you use it?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%B1%BB%E5%8F%98%E9%87%8F"><span class="toc-number">4.1.</span> <span class="toc-text">分类变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Factor-levels"><span class="toc-number">4.2.</span> <span class="toc-text">Factor levels</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Summarizing-a-factor"><span class="toc-number">4.3.</span> <span class="toc-text">Summarizing a factor</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What%E2%80%99s-a-data-frame"><span class="toc-number">5.</span> <span class="toc-text">What’s a data frame?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Have-a-look-at-the-structure"><span class="toc-number">5.1.</span> <span class="toc-text">Have a look at the structure</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Subset"><span class="toc-number">5.2.</span> <span class="toc-text">Subset</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sorting"><span class="toc-number">5.3.</span> <span class="toc-text">Sorting</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Lists-why-would-you-need-them"><span class="toc-number">6.</span> <span class="toc-text">Lists, why would you need them?</span></a></li></ol>
             </div>
         
         <!-- sidebar -->
@@ -741,8 +774,8 @@ boolean_vector &lt;- c(TRUE, FALSE ,TRUE)
             
         
         <li class="archive-post-item">
-            <span class="archive-post-date">03/31</span>
-            <a class="archive-post-title" href="/2022/03/31/2-R-datacamp/">R语言简介 | Datacamp</a>
+            <span class="archive-post-date">04/07</span>
+            <a class="archive-post-title" href="/2022/04/07/2-R-datacamp/">R语言简介 | Datacamp</a>
         </li>
     
         
