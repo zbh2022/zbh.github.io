@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-07T14:01:46.325Z</updated>
+  <updated>2022-04-08T11:48:40.220Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2022/04/07/3-R-datacamp/"/>
     <id>http://example.com/2022/04/07/3-R-datacamp/</id>
     <published>2022-04-07T13:43:06.000Z</published>
-    <updated>2022-04-07T14:01:46.325Z</updated>
+    <updated>2022-04-08T11:48:40.220Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="关系运算符-Relational-Operators"><a href="#关系运算符-Relational-Operators" class="headerlink" title="关系运算符 Relational Operators"></a>关系运算符 Relational Operators</h2><p>&#x3D;&#x3D;  !&#x3D;  &gt;  &lt;  &lt;&#x3D;  &gt;&#x3D;<br>确保不要混合&#x3D;&#x3D;（比较）和&#x3D;（赋值），&#x3D;&#x3D;是检查R对象的平等。</p><p>Logical Operators<br><img src="https://files.catbox.moe/tsukqc.png" alt="1"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="关系运算符-Relational-Operators"><a href="#关系运算符-Relational-Operators" class="headerlink" title="关系运算符 Relational Operators"></a>关系运算符 Relational Operators</h2><p>&#x3D;&#x3D;  !&#x3D;  &gt;  &lt;  &lt;&#x3D;  &gt;&#x3D;<br>确保不要混合&#x3D;&#x3D;（比较）和&#x3D;（赋值），&#x3D;&#x3D;是检查R对象的平等。</p><h2 id="逻辑运算符-Logical-Operators"><a href="#逻辑运算符-Logical-Operators" class="headerlink" title="逻辑运算符 Logical Operators"></a>逻辑运算符 Logical Operators</h2><p>严格的&amp;和|</p><p>懒惰的&amp;&amp;和||</p><h2 id="条件语句-Conditional-Statements"><a href="#条件语句-Conditional-Statements" class="headerlink" title="条件语句 Conditional Statements"></a>条件语句 Conditional Statements</h2><h3 id="IF语句"><a href="#IF语句" class="headerlink" title="IF语句"></a>IF语句</h3><pre><code class="r">if (condition1) &#123;  expr1&#125; else if (condition2) &#123;  expr2&#125; else if (condition3) &#123;  expr3&#125; else &#123;  expr4&#125;</code></pre><p>注意：else 关键字与 if 部分的结束括号在同一行上！</p><h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h3>]]></content>
     
     
       
